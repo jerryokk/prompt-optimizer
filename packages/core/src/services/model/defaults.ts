@@ -51,15 +51,6 @@ export const defaultModels: Record<string, ModelConfig> = {
     enabled: true,
     provider: 'openai'
   },
-  pollinations_o1_mini: {
-    name: 'Pollinations o1 mini',
-    baseURL: 'https://text.pollinations.ai/openai',
-    models: ['openai-reasoning'],
-    defaultModel: 'openai-reasoning',
-    apiKey: 'notneed',
-    enabled: true,
-    provider: 'openai'
-  },
   pollinations_deepseek_r1: {
     name: 'Pollinations deepseek r1',
     baseURL: 'https://text.pollinations.ai/openai',
