@@ -33,11 +33,38 @@ const CUSTOM_API_BASE_URL = getEnvVar('VITE_CUSTOM_API_BASE_URL');
 const CUSTOM_API_MODEL = getEnvVar('VITE_CUSTOM_API_MODEL');
 
 export const defaultModels: Record<string, ModelConfig> = {
-  pollinations: {
+  pollinations_4o_mini: {
     name: 'Pollinations',
     baseURL: 'https://text.pollinations.ai/openai',
-    models: ['openai', 'openai-large', 'openai-reasoning', 'deepseek-reasoner'],
+    models: ['openai'],
     defaultModel: 'openai',
+    apiKey: 'notneed',
+    enabled: true,
+    provider: 'openai'
+  },
+  pollinations_4o: {
+    name: 'Pollinations',
+    baseURL: 'https://text.pollinations.ai/openai',
+    models: ['openai-large'],
+    defaultModel: 'openai-large',
+    apiKey: 'notneed',
+    enabled: true,
+    provider: 'openai'
+  },
+  pollinations_o1_mini: {
+    name: 'Pollinations',
+    baseURL: 'https://text.pollinations.ai/openai',
+    models: ['openai-reasoning'],
+    defaultModel: 'openai-reasoning',
+    apiKey: 'notneed',
+    enabled: true,
+    provider: 'openai'
+  },
+  pollinations_deepseek_r1: {
+    name: 'Pollinations',
+    baseURL: 'https://text.pollinations.ai/openai',
+    models: ['deepseek-reasoner'],
+    defaultModel: 'deepseek-reasoner',
     apiKey: 'notneed',
     enabled: true,
     provider: 'openai'
