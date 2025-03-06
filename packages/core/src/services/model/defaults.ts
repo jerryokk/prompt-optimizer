@@ -33,6 +33,15 @@ const CUSTOM_API_BASE_URL = getEnvVar('VITE_CUSTOM_API_BASE_URL');
 const CUSTOM_API_MODEL = getEnvVar('VITE_CUSTOM_API_MODEL');
 
 export const defaultModels: Record<string, ModelConfig> = {
+  pollinations: {
+    name: 'Pollinations',
+    baseURL: 'https://text.pollinations.ai/openai',
+    models: ['openai', 'openai-large', 'openai-reasoning', 'deepseek-reasoner'],
+    defaultModel: 'openai',
+    apiKey: 'notneed',
+    enabled: true,
+    provider: 'openai'
+  },
   openai: {
     name: 'OpenAI',
     baseURL: 'https://api.openai.com/v1',
