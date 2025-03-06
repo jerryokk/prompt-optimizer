@@ -34,7 +34,7 @@ const CUSTOM_API_MODEL = getEnvVar('VITE_CUSTOM_API_MODEL');
 
 export const defaultModels: Record<string, ModelConfig> = {
   pollinations_4o_mini: {
-    name: 'Pollinations',
+    name: 'Pollinations 4o mini',
     baseURL: 'https://text.pollinations.ai/openai',
     models: ['openai'],
     defaultModel: 'openai',
@@ -43,7 +43,7 @@ export const defaultModels: Record<string, ModelConfig> = {
     provider: 'openai'
   },
   pollinations_4o: {
-    name: 'Pollinations',
+    name: 'Pollinations 4o',
     baseURL: 'https://text.pollinations.ai/openai',
     models: ['openai-large'],
     defaultModel: 'openai-large',
@@ -52,7 +52,7 @@ export const defaultModels: Record<string, ModelConfig> = {
     provider: 'openai'
   },
   pollinations_o1_mini: {
-    name: 'Pollinations',
+    name: 'Pollinations o1 mini',
     baseURL: 'https://text.pollinations.ai/openai',
     models: ['openai-reasoning'],
     defaultModel: 'openai-reasoning',
@@ -61,7 +61,7 @@ export const defaultModels: Record<string, ModelConfig> = {
     provider: 'openai'
   },
   pollinations_deepseek_r1: {
-    name: 'Pollinations',
+    name: 'Pollinations deepseek r1',
     baseURL: 'https://text.pollinations.ai/openai',
     models: ['deepseek-reasoner'],
     defaultModel: 'deepseek-reasoner',
